@@ -13,7 +13,7 @@ const fs = require('fs-extra')
 const { plugins,plugindb, remove, isUrl,cmd } = require('../lib')
 //---------------------------------------------------------------------------
 cmd({
-        pattern: "plugins",
+        pattern: "الاوامر",
         category: "owner",
         desc: "Shows list of all externally installed modules",
         filename: __filename
@@ -30,7 +30,7 @@ cmd({
 
 //---------------------------------------------------------------------------
 cmd({
-        pattern: "remove",
+        pattern: "حذف",
         category: "owner",
         desc: "removes external modules.",
         filename: __filename
@@ -50,7 +50,7 @@ cmd({
 
 //---------------------------------------------------------------------------
 cmd({
-        pattern: "install",
+        pattern: "تنزيل",
         category: "owner",
         desc: "Installs external modules..",
         filename: __filename
