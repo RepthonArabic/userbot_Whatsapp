@@ -2,8 +2,8 @@
   "__JSON__": true,
   "AUTHOR": "Valiant.v()",
   "theme": "Monkey-D-Luffy",
-  "LANGUAGE": "English",
-  "LANGCODE": "en",
+  "LANGUAGE": "Arabic",
+  "LANGCODE": "ar",
   "STRINGS": {
       "updater": {
           "UPDATE": "*Believe it.\nYour bot is already up-to-date*",
