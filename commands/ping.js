@@ -12,15 +12,15 @@
 //---------------------------------------------------------------------------
 const Secktor = require('../lib')
 Secktor.cmd({
-        pattern: "ping",
-        desc: "To check ping",
+        pattern: "بنك",
+        desc: "اضغط هنا لرؤيه البنك",
         category: "general",
         filename: __filename,
     },
     async(Void, citel) => {
         var inital = new Date().getTime();
-        await citel.reply('```Ping!!!```');
+        await citel.reply('```جاري حساب البنك!!!```');
         var final = new Date().getTime();
-        return await citel.reply('*Pong*\n *' + (final - inital) + ' ms* ');
+        return await citel.reply('*البنك*\n *' + (final - inital) + ' ms!* ');
     }
 );
