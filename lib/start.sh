@@ -1,5 +1,5 @@
 while true
 do
-echo "Starting Secktor-Md..."
+echo "جار بدء ريبثون..."
 node lib/client.js
 done
