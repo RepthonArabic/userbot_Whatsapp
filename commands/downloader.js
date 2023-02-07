@@ -58,7 +58,7 @@ cmd({
     )
     //---------------------------------------------------------------------------
 cmd({
-            pattern: "video",
+            pattern: "فيديو",
             desc: "Downloads video from yt.",
             category: "downloader",
             filename: __filename,
@@ -101,7 +101,7 @@ cmd({
     )
     //---------------------------------------------------------------------------
 cmd({
-            pattern: "play",
+            pattern: "تحميل",
             desc: "Sends info about the query(of youtube video/audio).",
             category: "downloader",
             filename: __filename,
@@ -115,21 +115,21 @@ cmd({
             let buttons = [{
                     buttonId: `${prefix}ytmp4 ${anu.url}`,
                     buttonText: {
-                        displayText: "► Video",
+                        displayText: "► فيديو",
                     },
                     type: 1,
                 },
                 {
                     buttonId: `${prefix}ytmp3 ${anu.url}`,
                     buttonText: {
-                        displayText: "♫ Audio",
+                        displayText: "♫ صوت",
                     },
                     type: 1,
                 },
                   {
                     buttonId: `${prefix}ytdoc ${anu.url}`,
                     buttonText: {
-                        displayText: "♫ Document",
+                        displayText: "♫ ملف",
                     },
                     type: 1,
                 },
@@ -141,14 +141,14 @@ cmd({
                 caption: `
 ╭───────────────◆
 │⿻ ${tlang().title} 
-│  *Youtube Player* ✨
-│⿻ *Title:* ${anu.title}
-│⿻ *Duration:* ${anu.timestamp}
-│⿻ *Viewers:* ${anu.views}
-│⿻ *Uploaded:* ${anu.ago}
-│⿻ *Author:* ${anu.author.name}
+│  *مقطع يوتيوب* ✨
+│⿻ *اسم الفيديو:* ${anu.title}
+│⿻ *طول الفيديو:* ${anu.timestamp}
+│⿻ *المشاهدات:* ${anu.views}
+│⿻ *تم رفعه في:* ${anu.ago}
+│⿻ *اسم صاحب الفيديو:* ${anu.author.name}
 ╰────────────────◆
-⦿ *Url* : ${anu.url}
+⦿ *رابط الملف* : ${anu.url}
 `,
                 footer: tlang().footer,
                 buttons: buttons,
@@ -230,7 +230,7 @@ cmd({
         })
     //---------------------------------------------------------------------------
 cmd({
-            pattern: "mediafire",
+            pattern: "ميديا فاير",
             desc: "Downloads zip from Mediafire.",
             category: "downloader",
             filename: __filename,
@@ -262,7 +262,7 @@ cmd({
     )
     //---------------------------------------------------------------------------
 cmd({
-            pattern: "audio",
+            pattern: "صوت",
             desc: "Downloads audio from youtube.",
             category: "downloader",
             filename: __filename,
