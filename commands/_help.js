@@ -19,11 +19,11 @@ const readmore = long.repeat(4001)
 const Secktor = require('../lib/commands')
     //---------------------------------------------------------------------------
 Secktor.cmd({
-            pattern: "help",
+            pattern: "مساعدة",
             alias: ["menu"],
-            desc: "Help list",
+            desc: "للحصول على المساعدة",
             category: "general",
-            react: "✨",
+            react: "❤️",
             filename: __filename
         },
         async(Void, citel, text) => {
@@ -55,16 +55,16 @@ Secktor.cmd({
                 let str = `╭────《 ` + fancytext(Config.ownername.split(' ')[0], 58) + ` 》─────⊷\n`
                 str +=
                     '```' + `│ ╭───────✧❁✧───────«
-│ │ User:- ${citel.pushName}
-│ │ Theme:- ${tlang().title}
+│ │ الاسم:- ${citel.pushName}
+│ │ الثيم:- ${tlang().title}
 │ │ Prefix:- [ ${prefix} ]
-│ │ Owner:- ${Config.ownername}
-│ │ Plugins:- ${commands.length}
-│ │ Users:- ${total}
-│ │ Uptime:- ${runtime(process.uptime())}
+│ │ المالك:- ${Config.ownername}
+│ │ عدد الاوامر:- ${commands.length}
+│ │ يوزرك:- ${total}
+│ │ الوقت:- ${runtime(process.uptime())}
 │ │ Mem:- ${formatp(os.totalmem() - os.freemem())}/${formatp(os.totalmem())}
-│ │ Time:- ${time}
-│ │ Date:- ${date}
+│ │ التاريخ:- ${time}
+│ │ اليوم:- ${date}
 │ ╰───────✧❁✧───────»
 ╰───────────────⊷\n
 ` + '```'
@@ -114,8 +114,8 @@ Secktor.cmd({
     )
     //---------------------------------------------------------------------------
 Secktor.cmd({
-            pattern: "list",
-            desc: "list menu",
+            pattern: "قائمة الاعدادات",
+            desc: "لروئية قائمة الاعدادات",
             category: "general",
             react: "✅"
         },
@@ -125,12 +125,12 @@ Secktor.cmd({
 ╭━━〘 ` + fancytext(Config.ownername.split(' ')[0], 58) + ` 〙━━──⊷`
             str += '```' + `
 ┃ ⛥╭──────────────      
-┃ ⛥│ User: ${citel.pushName}
-┃ ⛥│ Theme: ${tlang().title}
+┃ ⛥│ الاسم: ${citel.pushName}
+┃ ⛥│ الثيم: ${tlang().title}
 ┃ ⛥│ Prefix: ${prefix}
-┃ ⛥│ Owner: ${Config.ownername}
-┃ ⛥│ Commands: ${commands.length}
-┃ ⛥│ Uptime: ${runtime(process.uptime())}
+┃ ⛥│ المالك: ${Config.ownername}
+┃ ⛥│ الاوامر: ${commands.length}
+┃ ⛥│ الوقت: ${runtime(process.uptime())}
 ┃ ⛥│ Mem: ${formatp(os.totalmem() - os.freemem())}/${formatp(os.totalmem())}
 ┃ ⛥│  
 ┃ ⛥╰───────────
@@ -148,7 +148,7 @@ Secktor.cmd({
     )
     //---------------------------------------------------------------------------
 Secktor.cmd({
-        pattern: "owner",
+        pattern: "المالك",
         desc: "To check ping",
         category: "general",
         react: "💜",
@@ -185,7 +185,7 @@ Secktor.cmd({
 )
 
 Secktor.cmd({
-    pattern: "file",
+    pattern: "ملف",
     desc: "to get extact name where that command is in repo.\nSo user can edit that.",
     category: "general",
     react: "✨",
