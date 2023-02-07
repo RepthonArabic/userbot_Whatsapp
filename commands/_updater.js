@@ -14,7 +14,7 @@ const { execSync } = require('child_process')
 const { tlang, Config, prefix,cmd } = require('../lib')
     //---------------------------------------------------------------------------
 cmd({
-            pattern: "update",
+            pattern: "تحديث",
             desc: "Shows repo\'s refreshed commits.",
             category: "misc",
             filename: __filename
@@ -23,7 +23,7 @@ cmd({
             if (!isCreator) return citel.reply('This command is only for my owner')
             let commits = await DB.syncgit()
             if (commits.total === 0) {
-                citel.reply(`Hey ${citel.pushName}. You have latest version installed.`)
+                citel.reply(`مرحبا ${citel.pushName}. هناك اصدار جديد من ريبـــثون.`)
             } else {
                 let update = await DB.sync()
                   let button = [{
