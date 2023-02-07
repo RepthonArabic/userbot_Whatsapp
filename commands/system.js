@@ -250,7 +250,7 @@ cmd({
     )
     //---------------------------------------------------------------------------
 cmd({
-            pattern: "alive",
+            pattern: "فحص",
             category: "general",
             filename: __filename,
             desc: "is bot alive??"
@@ -258,14 +258,14 @@ cmd({
         async(Void, citel, text, isAdmins) => {
             let alivemessage = Config.ALIVE_MESSAGE || `*A bot developed by SamPandey001.*`
             const alivtxt = `
-*Hello, ${citel.pushName},*
-_This is  ${tlang().title}._
+*مرحبا سورس ريبـــثون يعمل بنجــاح, ${citel.pushName},*
+الثيم المستخدم هو  ${tlang().title}._
 ${alivemessage}
 
-*Version:-* _0.0.6_
-*Uptime:-* _${runtime(process.uptime())}_
-*Owner:-* _${Config.ownername}_
-*Branch:-* _${Config.BRANCH}_
+*الاصدار:-* _0.0.6_
+*الوقت:-* _${runtime(process.uptime())}_
+*المالك:-* _${Config.ownername}_
+*البرانج:-* _${Config.BRANCH}_
 
 _Type ${prefix}menu for my command list._
 
