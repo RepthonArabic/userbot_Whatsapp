@@ -12,8 +12,8 @@
 //---------------------------------------------------------------------------
 const {cmd,tlang} = require('../lib')
 cmd({
-        pattern: "restart",
-        desc: "To restart bot",
+        pattern: "اعادة تشغيل",
+        desc: "لاعادة تشغيل البوت",
         category: "tools",
         filename: __filename
     },
