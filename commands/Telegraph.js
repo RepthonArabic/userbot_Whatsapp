@@ -14,7 +14,7 @@ const { cmd }   = require('../lib');
 const util = require('util');
 const axios = require('axios');
 cmd({
-        pattern: "paste",
+        pattern: "تلكراف ميديا",
         desc: "create paste of text.",
         category: "general",
         filename: __filename,
